@@ -1,0 +1,10 @@
+shared:
+  image: centos:centos7
+
+  blocked:
+    annotations:
+      screwdriver.cd/blockedBySameJob: false
+      screwdriver.cd/blockedBySameJobWaitTime: 1
+    requires: [ ~commit ]
+    steps:
+      - wait: sleep 600
