@@ -1,6 +1,7 @@
 shared:
   image: centos:centos7
 
+jobs:
   blocked:
     annotations:
       screwdriver.cd/blockedBySameJob: false
